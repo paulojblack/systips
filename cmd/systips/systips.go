@@ -7,21 +7,21 @@ import (
 )
 
 func main() {
-    tip := getRandomTip()
+    tip := GetRandomTip()
 
     fmt.Println(tip)
 }
 
-func getRandomTip() string {
+func GetRandomTip() string {
     seed := rand.NewSource(time.Now().UnixNano())
     randomizer := rand.New(seed)
-    tipArray := getTips()
+    tipArray := GetTips()
 
     tip := tipArray[randomizer.Intn(len(tipArray))]
     return tip
 }
 
-func getTips() []string {
+func GetTips() []string {
     var tipArray = []string{
         "To see all local users on your current machine, execute 'cut -d: -f1 /etc/passwd'",
         "Execute 'whoami' to see which user you are currently logged in as",
