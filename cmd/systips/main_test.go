@@ -4,8 +4,8 @@ import "testing"
 import "fmt"
 
 func TestGetTips(t *testing.T) {
-	// tip := GetTips
+	tip := GetTips()
 
     // fmt.Println(tip)
-    fmt.Println(GetTips())
+    fmt.Println(tip)
 }

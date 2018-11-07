@@ -8,6 +8,8 @@ Written in Golang. Under development
 `go test ./...`
 
 ## TODO
-- Unit tests!!!
 - Add meta-information to each tip, such as a subcategory (networking, efficiency etc.) and "level" (beginner, intermediate, advanced)
 - Look in to text formatting of stdout
+
+## Thanks to
+[Derek Smith](http://github.com/clok) for code from [gwvault](https://github.com/goodwaygroup/gwvault)
