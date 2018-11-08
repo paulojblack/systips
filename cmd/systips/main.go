@@ -45,13 +45,13 @@ func GetTips() []Tip {
         },
         Tip {
             id: 3,
-            tags: []string{"tag1", "tag2"},
+            tags: []string{"utility"},
             level: "a",
             txt: "Install https://github.com/Russell91/sshrc to copy in an rc file of your own aliases and command anytime you log in to a new server through ssh.",
         },
         Tip {
             id: 4,
-            tags: []string{"tag1", "tag2"},
+            tags: []string{"bash"},
             level: "b",
             txt: "Learn to use the basic shell builtins thoroughly! For example, put `alias ll='ls -lha'` in your ~/.bash_profile or ~/.bashrc and instead of just the usual contents " +
             "of the passed in directory, you will see (-a) all files, including hidden (starting with .) files, (-l) long format, which is more easily readable and shows more information " +
@@ -59,9 +59,15 @@ func GetTips() []Tip {
         },
         Tip {
             id: 5,
-            tags: []string{"tag1", "tag2"},
+            tags: []string{"bash"},
             level: "b",
             txt: "Execute `man ${command}` to see the manual entry for that command. For example, `man grep` will explain how to use the `grep` command",
+        },
+        Tip {
+            id: 6,
+            tags: []string{"bash", "autocompletion"},
+            level: "b",
+            txt: "Hit the `tab` key while typing the name of a file, path, or command to use autocompletion. Many third party tools such as git and the aws cli offer their own installable autocompletion tools as well.",
         },
     }
 
