@@ -69,6 +69,18 @@ func GetTips() []Tip {
             level: "b",
             txt: "Hit the `tab` key while typing the name of a file, path, or command to use autocompletion. Many third party tools such as git and the aws cli offer their own installable autocompletion tools as well.",
         },
+        Tip {
+            id: 7,
+            tags: []string{"bash", "autocompletion"},
+            level: "i",
+            txt: "Surrounding a command with either backticks `` or $() will substitute the command with the output of the command. For example, `echo $(ls)` pipe the text listing the contents of your current directory through `echo`",
+        },
+        Tip {
+            id: 8,
+            tags: []string{"bash"},
+            level: "i",
+            txt: "There are many ways to loop through iterable collections of data in Bash. For example, to loop through every item in your current directory, enter: `for i in $( ls ); do echo item: ${i}; done`",
+        },
     }
 
     return tips
